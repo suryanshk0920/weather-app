@@ -115,3 +115,59 @@ body{
   margin-top: 10px;
   display: none;
 }
+
+/* Add this CSS at the end of your existing styles.css */
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  body{
+    background: url(images/cropped-back2.jpg);
+    background-size: cover;
+  }
+  .card {
+    padding: 30px 25px; /* Reduce padding */
+    border-radius: 15px; /* Smaller border radius */
+  }
+
+  .search input {
+    padding: 10px 20px; /* Adjust input padding */
+    height: 50px; /* Reduce input height */
+    font-size: 16px; /* Decrease font size */
+  }
+
+  .search button {
+    width: 50px; /* Reduce button width */
+    height: 50px; /* Reduce button height */
+  }
+
+  .weather-icon {
+    width: 120px; /* Reduce weather icon size */
+    margin-top: 20px; /* Adjust margin */
+  }
+
+  .weather h1 {
+    font-size: 60px; /* Decrease font size */
+  }
+
+  .weather h2 {
+    font-size: 35px; /* Decrease font size */
+  }
+
+  .details {
+    flex-direction: column; /* Stack details vertically */
+    margin-top: 30px; /* Adjust margin */
+  }
+
+  .col {
+    margin-bottom: 20px; /* Adjust margin between details */
+  }
+
+  .col img {
+    width: 30px; /* Reduce icon size */
+  }
+
+  .humidity,
+  .wind {
+    font-size: 20px; /* Decrease font size */
+  }
+}
