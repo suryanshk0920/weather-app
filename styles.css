@@ -9,7 +9,8 @@
 }
 
 body{
-  background: #222;
+  background: url(images/back2.jpg);
+  background-size: cover;
 }
 
 .card{
@@ -46,12 +47,17 @@ body{
 .search button{
   border: 0;
   outline: 0;
-  background: #ebfffc;
+  background: #e8eeed;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   cursor: pointer;
+}
 
+.search button:hover{
+  background: rgb(160, 158, 158);
+  color: rgb(0, 0, 0);
+  transition: all 0.2s ease-in-out;
 }
 
 .search button img{
